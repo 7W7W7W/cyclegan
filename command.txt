@@ -1,0 +1,7 @@
+python train.py --serial_batches --dataroot /home/pxshi/files/datasets/mr_us --model  cycle_gan
+python train.py --serial_batches --dataroot /home/pxshi/files/datasets --model  pix2pix
+#!./scripts/test_cyclegan.sh
+python test.py --dataroot /home/pxshi/files/contrastive-unpaired-translation/2D --name maps_CUT2.0 --model cycle_gan
+
+
+python test.py --dataroot /home/pxshi/files/datasets/voxelmorphdatas --results_dir ./results/morphdatas/case00 --num_test 62 --name maps_CUT2.0 --model cycle_gan
